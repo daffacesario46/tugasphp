@@ -35,5 +35,67 @@ echo "<br>";
 
 //cara ternary
 echo $nilai>6 ? "baik" : "buruk"; 
+
+
+echo "<hr>";
+
+$baju='M'; //ukuran baju
+switch ($baju){
+    case "L":
+        echo "Large";
+        break;
+    case "M":
+        echo "Medium";
+        break;
+    default:
+        echo "Small";
+}
+
+echo "<hr>";
+
+// TUGAS - SWITCHCASE
+// jika nilai <=0 nilai : buruk
+// jika nilai <=40 nilai : kurang
+// jika nilai <=70 nilai : cukup
+// jika nilai <=80 nilai : memuaskan
+// jika nilai <=100 nilai : sangat memuaskan
+// selain itu null
+//JAWABAN: 
+//statement switchcase
+
+
+$nilai = 80;
+switch ($nilai) {
+    case $nilai <= 40 :
+        echo "$nilai: Nilai Kurang";
+        break;
+    case $nilai <= 70 :
+        echo "$nilai: Nilai cukup";
+        break;
+    default:
+        echo "null";
+} 
+
+echo "<hr>";
+
+
+$nilai2 = 40;
+switch ($nilai2){
+    case $nilai2 >= 0 && $nilai2 < 35 :
+        echo "$nilai2: E";
+    break;
+    case $nilai2 >= 35 && $nilai2 <60:
+        echo "$nilai2: D";
+    break;
+
+    default:
+        echo "null";
+}
+
+
+
+
+
 ?>
+
 
