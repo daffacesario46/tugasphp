@@ -94,8 +94,10 @@ $keterangan_nilai = [
             <?php
             $no=1;
             foreach ($ar_mahasiswa as $mahasiswa){
+                //keterangan menggunakan ternary
                 $keterangan = ($mahasiswa ['Nilai'] >= 65) ? "Lulus" : "Tidak Lulus";
 
+                //Grade IF multikondisi
                 if ($mahasiswa['Nilai'] >= 85 && $mahasiswa['Nilai'] <= 100) $grade = 'A';
                 else if ($mahasiswa['Nilai'] >= 75 && $mahasiswa['Nilai'] <= 85) $grade = 'B';
                 else if ($mahasiswa['Nilai'] >= 65 && $mahasiswa['Nilai'] <= 75) $grade = 'C';
@@ -103,6 +105,7 @@ $keterangan_nilai = [
                 else if ($mahasiswa['Nilai'] >= 0 && $mahasiswa['Nilai'] <= 45) $grade = 'E';
                 else $grade = '';
 
+                //predikat menggunakan SWITCH CASE
                 switch ($grade) {
                     case 'A':
                         $predikat = 'Memuaskan';
