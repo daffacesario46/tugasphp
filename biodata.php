@@ -8,10 +8,6 @@ $notelp = '087881823267';
 
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
